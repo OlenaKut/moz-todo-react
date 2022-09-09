@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+
 export default function Weather() {
   let [city, setCity] = useState("");
   let [temperature, setTemperature] = useState(null);
@@ -27,9 +28,12 @@ export default function Weather() {
         <input type="search" onChange={changeCity} />
         <input type="submit" value="Search" />
       </form>
+
       <p>
         {city}: {temperature}
       </p>
+
+      
     </div>
   );
 }
