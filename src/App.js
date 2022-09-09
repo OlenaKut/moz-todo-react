@@ -1,13 +1,15 @@
+import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Weather from "./Weather";
 
-function App(props) {
+function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-
-        <p>Hello, {props.subject}!</p>
+        <Weather />
+        <Weather />
       </header>
     </div>
   );
